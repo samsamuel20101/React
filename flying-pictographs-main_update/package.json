@@ -1,0 +1,21 @@
+{
+  "name": "programming-thoughts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server run watch",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "postinstall": "npm --prefix client install && npm --prefix server install",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

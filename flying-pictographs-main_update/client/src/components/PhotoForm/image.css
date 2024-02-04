@@ -1,0 +1,21 @@
+.dropzone {
+  border: 2px dashed #aaa;
+  /* border-radius: 5px; */
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.dragging {
+  border-color: #888;
+}
+
+img {
+  max-width: 100%;
+}
+
+input[type="file"] {
+  display: none;
+}
